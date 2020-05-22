@@ -13,7 +13,7 @@
       <div ng-app = "Pokedex" ng-controller = "MainController">
          <input class = "input" type="text" ng-model = "search.pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
 
-         <button type="button" class="btn btn-default">Search</button> </br>
+         <button type="button" ng-click="apiCall()" class="btn btn-default">Search</button> </br>
          <p>searched name: {{search.pokeName}}</p>
          <img src={{pokemon.sprites.front_default}}> 
          <p>pokemon: {{pokemon.name}}</p> 

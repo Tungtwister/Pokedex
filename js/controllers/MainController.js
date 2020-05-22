@@ -1,7 +1,10 @@
 app.controller('MainController', function($scope) {
-	$scope.search={
+	$scope.search = {
 		pokeName: "ditto"
 	};
+	$scope.apiCall = function() {
+		alert("Hello")
+	}
 });
 
 
