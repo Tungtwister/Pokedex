@@ -1,6 +1,6 @@
 app.controller('MainController', function($scope) {
-	$scope.pokeName={
-
+	$scope.search={
+		pokeName: "ditto"
 	};
 });
 
