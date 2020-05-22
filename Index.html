@@ -11,12 +11,23 @@
       <h2>Pokedex</h2>
       
       <div ng-app = "Pokedex" ng-controller = "MainController">
-         pokemon: {{pokemon.name}}
+         <input class = "input" type="text" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
+
+         <button type="button" class="btn btn-default">Search</button> </br>
+         <p>searched name: {{pokename}}</p>
+         <img src={{pokemon.sprites.front_default}}> 
+         <p>pokemon: {{pokemon.name}}</p> 
+         <p>type: {{pokemon.types[0].type.name}} and {{pokemon.types[1].type.name}}</p>
+
+         <p>stats</p>
+
+         <p>{{}}
       </div>
       
 
       <script src="js/app.js"></script>
       <script src="js/controllers/MainController.js"></script>
+      <script src="js/services/pokeapi.js"></script>
       
    </body>
 </html>
