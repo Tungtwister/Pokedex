@@ -12,10 +12,10 @@
       <h2>Pokedex</h2>
       
       <div ng-app = "Pokedex" ng-controller = "MainController">
-         <input class = "input" type="text" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name(case-sensitive" required />
+         <input class = "input" type="text" my-enter="pokeSearch()" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
 
-         <button type="button" ng-click="pokeSearch()" class="btn btn-default">Search</button> </br>
-         <p>searched name: {{pokeName}}</p>
+         <button type="submit" ng-click="pokeSearch()" class="btn btn-default">Search</button> </br>
+         <p>searched name: {{lowerName}}</p>
          <img src={{pokemon.sprites.front_default}}> 
          <p>pokemon: {{pokemon.name}}</p> 
          <p>type: {{pokemon.types[0].type.name}}  {{pokemon.types[1].type.name}}</p>
@@ -28,12 +28,14 @@
          <p>{{pokemon.stats[2].stat.name}}: {{pokemon.stats[2].base_stat}}</p>
          <p>{{pokemon.stats[1].stat.name}}: {{pokemon.stats[1].base_stat}}</p>
          <p>{{pokemon.stats[0].stat.name}}: {{pokemon.stats[0].base_stat}}</p>
+         <p>{{species.flavor_text_entries[1].flavor_text}}</p>
       </div>
       
 
       <script src="js/app.js"></script>
       <script src="js/controllers/MainController.js"></script>
       <script src="js/services/pokeapi.js"></script>
+      <script src="js/directives/enterPress.js"></script>
       
    </body>
 </html>
