@@ -12,7 +12,7 @@
       <h2>Pokedex</h2>
       
       <div ng-app = "Pokedex" ng-controller = "MainController">
-         <input class = "input" type="text" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
+         <input class = "input" type="text" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name(case-sensitive" required />
 
          <button type="button" ng-click="pokeSearch()" class="btn btn-default">Search</button> </br>
          <p>searched name: {{pokeName}}</p>
