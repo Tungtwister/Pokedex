@@ -11,13 +11,13 @@
       <h2>Pokedex</h2>
       
       <div ng-app = "Pokedex" ng-controller = "MainController">
-         <input class = "input" type="text" ng-model = "search.pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
+         <input class = "input" type="text" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
 
-         <button type="button" ng-click="apiCall()" class="btn btn-default">Search</button> </br>
-         <p>searched name: {{search.pokeName}}</p>
+         <button type="button" ng-click="pokeSearch()" class="btn btn-default">Search</button> </br>
+         <p>searched name: {{pokeName}}</p>
          <img src={{pokemon.sprites.front_default}}> 
          <p>pokemon: {{pokemon.name}}</p> 
-         <p>type: {{pokemon.types[0].type.name}} and {{pokemon.types[1].type.name}}</p>
+         <p>type: {{pokemon.types[0].type.name}}  {{pokemon.types[1].type.name}}</p>
 
          <h2>stats</h2>
 
