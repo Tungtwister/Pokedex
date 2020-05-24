@@ -1,0 +1,37 @@
+.top {
+	border-style: hidden;
+	box-shadow: 0 0 2px;
+	border-radius: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.topbox {
+	text-align: center;
+}
+
+.pokedexData {
+    float:left;  
+    background:red;
+    width:33%; 
+    height:280px; 
+}
+.stats {
+	float:left;  
+	background:green;
+	width:34%; 
+	height:280px;
+}
+.moves {
+    float:right; 
+    background:blue; 
+    width:33%; 
+    height:280px;
+}
+
+.moveBox {
+	height: 200px;
+	overflow: auto;
+}
