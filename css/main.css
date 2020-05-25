@@ -32,7 +32,7 @@ html {
 	text-align: center;
 	margin-bottom: 20px;
 	background-color: white;
-	width: 30%;
+	max-width: 500px;
 	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -45,6 +45,7 @@ html {
 
 .information {
 	height:280px;
+	display: flex;
 }
 .information p {
 	padding-left: 20px;
@@ -56,32 +57,35 @@ html {
 .pokedexData {
 	border-style: hidden;
 	box-shadow: 0 0 4px;
-	border-radius: 8px;
-    float:left;  
-    width:33%; 
+	border-radius: 8px; 
+    width:32%; 
     height:280px;
     background-color: white;
-    margin-right: 20px; 
+    margin-left: auto;
+	margin-right: auto;
+
 }
 
 .stats {
 	border-style: hidden;
 	box-shadow: 0 0 4px;
-	border-radius: 8px;
-	float:left;  
+	border-radius: 8px;  
 	width:32%; 
 	height:280px;
 	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .moves {
 	border-style: hidden;
 	box-shadow: 0 0 4px;
-	border-radius: 8px;
-    float:right; 
-    width:33%; 
+	border-radius: 8px; 
+    width:32%; 
     height:280px;
     background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .moveBox {
