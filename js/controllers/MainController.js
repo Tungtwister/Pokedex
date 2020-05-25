@@ -17,6 +17,16 @@ function($scope, $http, pokeapi) {
 	};
 
 	pokeapi.success(function(data) { 
-	$scope.pokemon = data; 
+	$scope.pokemon = data;
+	$http.get($scope.pokemon.species.url)
+    .success(function(data) {
+    	$scope.species = data;
+    }) 
 	}); 
 }]); 
+
+app.filter('capitalize', function() {
+    return function(input) {
+      return (angular.isString(input) && input.length > 0) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : input;
+    }
+});

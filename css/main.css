@@ -1,34 +1,78 @@
+html {
+	background: url(../img/pika.jpg);
+}
+
 .top {
 	border-style: hidden;
-	box-shadow: 0 0 2px;
+	box-shadow: 0 0 4px;
 	border-radius: 8px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top input {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
 	text-align: center;
 }
 
 .topbox {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: white;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.information p {
+	padding-left: 20px;
+}
+.information h2 {
 	text-align: center;
 }
 
 .pokedexData {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
     float:left;  
-    background:red;
-    width:33%; 
-    height:280px; 
-}
-.stats {
-	float:left;  
-	background:green;
-	width:34%; 
-	height:280px;
-}
-.moves {
-    float:right; 
-    background:blue; 
     width:33%; 
     height:280px;
+    background-color: white;
+    margin-right: 20px; 
+}
+
+.stats {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
+	float:left;  
+	width:32%; 
+	height:280px;
+	background-color: white;
+}
+
+.moves {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
+    float:right; 
+    width:33%; 
+    height:280px;
+    background-color: white;
 }
 
 .moveBox {
