@@ -29,6 +29,7 @@
                <h2>Pokedex Data</h2>
                <p>Pokemon: {{pokemon.name | capitalize}}</p> 
                <p>Type: {{pokemon.types[0].type.name | capitalize}}  {{pokemon.types[1].type.name | capitalize}}</p>
+               <p>Type: {{pokemon.abilities[0].ability.name | capitalize}} | {{pokemon.abilities[1].ability.name | capitalize}}</p>
                <p ng-repeat="specie in species.genera | filter: {language: {name: 'en'}}">Species: {{specie.genus}}</p>
                <p>Height: {{pokemon.height/10}} m</p>
                <p>Weight: {{pokemon.weight/10}} kgs</p>
@@ -36,7 +37,7 @@
             </div>
 
             <div class="stats">
-            <h2>Stats</h2>
+            <h2>Base stats</h2>
 
             <p>{{pokemon.stats[5].stat.name | capitalize}}: {{pokemon.stats[5].base_stat}}</p>
             <p>{{pokemon.stats[4].stat.name | capitalize}}: {{pokemon.stats[4].base_stat}}</p>
@@ -54,6 +55,12 @@
                </div>
             </div>
          </div>
+
+<!--          <div class="evolution">
+               <p>Evolution Chart</p>
+               <img src={{pokemon.sprites.front_default}}>
+               <p>{{evolution.chain.evolves_to}}</p>
+         </div> -->
       </div>
       
 

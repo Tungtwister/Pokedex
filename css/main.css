@@ -37,6 +37,9 @@ html {
 	margin-right: auto;
 }
 
+.information {
+	height:280px;
+}
 .information p {
 	padding-left: 20px;
 }
@@ -78,4 +81,12 @@ html {
 .moveBox {
 	height: 200px;
 	overflow: auto;
+}
+
+.evolution {
+	border-style: hidden;
+	box-shadow: 0 0 4px;
+	border-radius: 8px;
+	background-color: white;
+	text-align: center;
 }

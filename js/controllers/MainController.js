@@ -9,6 +9,10 @@ function($scope, $http, pokeapi) {
 		    $http.get($scope.pokemon.species.url)
 		    .success(function(data) {
 		    	$scope.species = data;
+		    	$http.get($scope.species.evolution_chain.url)
+		    	.success(function(data) {
+		    		$scope.evolution = data;
+		    	})
 		    }) 
   		})
         .error(function(err) { 
@@ -21,6 +25,10 @@ function($scope, $http, pokeapi) {
 	$http.get($scope.pokemon.species.url)
     .success(function(data) {
     	$scope.species = data;
+    	$http.get($scope.species.evolution_chain.url)
+    	.success(function(data) {
+    		$scope.evolution = data;
+    	})
     }) 
 	}); 
 }]); 
