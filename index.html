@@ -10,15 +10,19 @@
    <body>
       <div ng-app = "Pokedex" ng-controller = "MainController">
          <div class="top">
-            <h2>Pokedex</h2>
+            <h2>Pok&eacute;dex</h2>
             <input class = "input" type="text" my-enter="pokeSearch()" ng-model = "pokeName" name="pokeName" size="30" placeholder="Enter pokemon name" required />
 
             <button type="submit" ng-click="pokeSearch()" class="btn btn-default">Search</button>
          </div>
 
-         
          <div class="imgBox">
-            <img src={{pokemon.sprites.front_default}}>
+         <ul>
+            <li><img src={{pokemon.sprites.front_default}}></li>
+            <li><img src={{pokemon.sprites.back_default}}></li>
+            <li><img src={{pokemon.sprites.front_shiny}}></li>
+            <li><img src={{pokemon.sprites.back_shiny}}></li>
+         </ul>
          </div>
 <!--          <div class="flavorBox">
             <p ng-repeat="fte in species.flavor_text_entries | filter: {language: {name: 'en'}}">{{fte.flavor_text}}</p>
@@ -26,8 +30,8 @@
 
          <div class="information">
             <div class="pokedexData">
-               <h2>Pokedex Data</h2>
-               <p>Pokemon: {{pokemon.name | capitalize}}</p> 
+               <h2>Pok&eacute;dex Data</h2>
+               <p>Pok&eacute;mon: {{pokemon.name | capitalize}}</p> 
                <p>Type: {{pokemon.types[0].type.name | capitalize}}  {{pokemon.types[1].type.name | capitalize}}</p>
                <p>Type: {{pokemon.abilities[0].ability.name | capitalize}} | {{pokemon.abilities[1].ability.name | capitalize}}</p>
                <p ng-repeat="specie in species.genera | filter: {language: {name: 'en'}}">Species: {{specie.genus}}</p>
