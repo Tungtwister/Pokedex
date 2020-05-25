@@ -19,7 +19,8 @@ html {
 }
 
 .top input {
-	border-style: hidden;
+	border-style: solid;
+	border-color: grey;
 	box-shadow: 0 0 4px;
 	border-radius: 8px;
 	text-align: center;
